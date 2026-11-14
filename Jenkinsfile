@@ -1,4 +1,4 @@
-pipeline {
+vpipeline {
     agent any
     stages {
          stage('DEV') {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('PRE PROD') {
             steps {
-                echo "Deploy my app to pre prod...."
+                echo "Deploy my app to pre prod env...."
             }
         }
         stage('DEPLOY') {
