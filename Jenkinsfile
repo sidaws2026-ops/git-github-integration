@@ -21,6 +21,11 @@ pipeline {
                 echo "Deploy my app to pre prod env...."
             }
         }
+         stage('PROD') {
+            steps {
+                echo "Deploy my app to prod env...."
+            }
+        }
         stage('DEPLOY') {
             steps {
                 echo "Deploy my app...."
