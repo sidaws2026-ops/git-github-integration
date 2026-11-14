@@ -16,6 +16,11 @@ pipeline {
                 echo "Test my app...."
             }
         }
+        stage('PRE PROD') {
+            steps {
+                echo "Deploy my app to pre prod...."
+            }
+        }
         stage('DEPLOY') {
             steps {
                 echo "Deploy my app...."
